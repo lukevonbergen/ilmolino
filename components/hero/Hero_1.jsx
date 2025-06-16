@@ -30,7 +30,7 @@ export default function HeroSection() {
 
         <div className="flex justify-center gap-4">
           <a
-            href="#menu"
+            href="/menu"
             className="bg-amber-500 text-white px-8 py-3 rounded-md font-medium text-lg shadow hover:bg-amber-600 transition"
           >
             View Menu

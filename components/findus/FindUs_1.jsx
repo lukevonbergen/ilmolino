@@ -11,14 +11,19 @@ export default function HowToFindUs() {
           <p className="text-lg text-gray-700 mb-4">
             Our café is located in the heart of Battersea, just a short walk from Clapham Junction Station. Whether you're grabbing coffee on the go or settling in for brunch, we’re easy to reach and always ready to welcome you.
           </p>
-          <p className="text-md text-gray-600">
-            284 Battersea Park Road,< br />
+          <p className="text-md text-gray-600 mb-4">
+            <strong>Address:</strong><br />
+            284 Battersea Park Road,<br />
             London SW11 3BT, United Kingdom
-            <br /><br />
+          </p>
+          <p className="text-md text-gray-600 mb-4">
             <strong>Opening Hours:</strong><br />
             Monday to Friday: 7:00 AM – 5:00 PM<br />
             Saturday: 7:30 AM – 5:00 PM<br />
             Sunday: 8:00 AM – 5:00 PM
+          </p>
+          <p className="text-md text-gray-600">
+            <strong>Email:</strong> <a href="mailto:info@ilmolino.co.uk" className="text-amber-700 hover:underline">info@ilmolino.co.uk</a>
           </p>
         </div>
 

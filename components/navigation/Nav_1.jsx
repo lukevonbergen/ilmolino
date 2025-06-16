@@ -16,8 +16,8 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
           <a href="/" className="hover:text-black transition">Home</a>
-          <a href="#gallery" className="hover:text-black transition">Gallery</a>
-          <a href="#contact" className="hover:text-black transition">Contact</a>
+          <a href="/gallery" className="hover:text-black transition">Gallery</a>
+          <a href="/contact" className="hover:text-black transition">Contact</a>
         </nav>
 
         {/* CTA */}
