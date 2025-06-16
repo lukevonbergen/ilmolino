@@ -1,24 +1,24 @@
 export default function StatsSectionIntermediate() {
   const stats = [
     {
-      label: 'Websites Launched',
-      value: '150+',
-      icon: '🚀',
+      label: 'Coffees Served',
+      value: '20,000+',
+      icon: '☕',
     },
     {
-      label: 'Avg. Delivery Time',
-      value: '48h',
-      icon: '⏱️',
+      label: 'Pastries Baked',
+      value: '15,000+',
+      icon: '🥐',
     },
     {
-      label: 'Client Satisfaction',
-      value: '99%',
-      icon: '💬',
+      label: 'Happy Customers',
+      value: '4.8★',
+      icon: '😊',
     },
     {
-      label: 'Code Ownership',
-      value: '100%',
-      icon: '🧑‍💻',
+      label: 'Years in Battersea',
+      value: '12+',
+      icon: '📍',
     },
   ];
 
@@ -26,7 +26,7 @@ export default function StatsSectionIntermediate() {
     <section className="bg-white py-24 px-6 md:px-12 border-t border-gray-100">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-tight text-gray-900">
-          Built for Impact
+          A Local Favourite
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

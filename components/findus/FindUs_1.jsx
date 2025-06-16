@@ -9,15 +9,16 @@ export default function HowToFindUs() {
             How to Find Us
           </h2>
           <p className="text-lg text-gray-700 mb-4">
-            Our studio is located in the heart of London, just a short walk from Liverpool Street Station.
+            Our café is located in the heart of Battersea, just a short walk from Clapham Junction Station. Whether you're grabbing coffee on the go or settling in for brunch, we’re easy to reach and always ready to welcome you.
           </p>
           <p className="text-md text-gray-600">
-            123 Startup Lane<br />
-            Shoreditch, London EC2A 4DP<br />
+            284 Battersea Park Road,< br />
+            London SW11 3BT, United Kingdom
             <br />
             <strong>Opening Hours:</strong><br />
-            Mon–Fri: 9:00am – 6:00pm<br />
-            Sat–Sun: Closed
+            Monday to Friday: 7:00 AM – 5:00 PM<br />
+            Saturday: 7:30 AM – 5:00 PM<br />
+            Sunday: 8:00 AM – 5:00 PM
           </p>
         </div>
 
@@ -25,7 +26,7 @@ export default function HowToFindUs() {
         <div className="md:w-1/2 w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-md">
           <iframe
             title="Our Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19834.89609613451!2d-0.0921685!3d51.5225948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb3c3b7f7e1%3A0x4e5f26c16e9e6f33!2sShoreditch%2C%20London!5e0!3m2!1sen!2suk!4v1717938593324!5m2!1sen!2suk"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=284%20Battersea%20Park%20Road,%20%20London%20SW11%203BT,%20United%20Kingdom+(Il%20Molino)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

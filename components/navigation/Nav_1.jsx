@@ -1,32 +1,58 @@
+'use client';
+import { useState } from 'react';
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="w-full py-6 px-6 md:px-12 border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#" className="text-xl font-bold tracking-tight text-gray-900">
-          NavBar One
+        
+        {/* Brand */}
+        <a href="/" className="text-xl font-bold tracking-tight text-gray-900">
+          Il Molino
         </a>
 
+        {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
-          <a href="#features" className="hover:text-black transition">Link 1</a>
-          <a href="#pricing" className="hover:text-black transition">Link 2</a>
-          <a href="#examples" className="hover:text-black transition">Link 3</a>
-          <a href="#contact" className="hover:text-black transition">Link 4</a>
+          <a href="/" className="hover:text-black transition">Home</a>
+          <a href="#about" className="hover:text-black transition">About</a>
+          <a href="#menu" className="hover:text-black transition">Menu</a>
+          <a href="#gallery" className="hover:text-black transition">Gallery</a>
+          <a href="#contact" className="hover:text-black transition">Contact</a>
         </nav>
 
+        {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="#contact"
-            className="bg-black text-white px-5 py-2 rounded-lg text-sm font-semibold shadow hover:opacity-90 transition"
+            href="#menu"
+            className="bg-amber-600 text-white px-5 py-2 rounded-lg text-sm font-semibold shadow hover:bg-amber-700 transition"
           >
-            Nav Button
+            View Menu
           </a>
         </div>
 
+        {/* Mobile Toggle */}
         <div className="md:hidden">
-          {/* Mobile menu toggle placeholder (can be a hamburger icon if needed) */}
-          <button className="text-gray-800">☰</button>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-gray-800 text-2xl focus:outline-none"
+          >
+            ☰
+          </button>
         </div>
       </div>
+
+      {/* Mobile Nav Panel */}
+      {isOpen && (
+        <div className="md:hidden mt-4 px-6 space-y-4 text-sm font-medium text-gray-700">
+          <a href="/" onClick={() => setIsOpen(false)} className="block hover:text-black">Home</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="block hover:text-black">About</a>
+          <a href="#menu" onClick={() => setIsOpen(false)} className="block hover:text-black">Menu</a>
+          <a href="#gallery" onClick={() => setIsOpen(false)} className="block hover:text-black">Gallery</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="block hover:text-black">Contact</a>
+        </div>
+      )}
     </header>
   );
 }
