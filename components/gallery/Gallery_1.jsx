@@ -35,13 +35,6 @@ export default function GalleryGrid() {
   return (
     <section className="bg-white py-24 px-6 md:px-12 border-t border-gray-100">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-gray-900">
-          Il Molino Gallery
-        </h2>
-        <p className="text-lg md:text-xl text-gray-600 mb-12">
-          A glimpse inside our café — warm vibes, fresh flavours, and friendly faces.
-        </p>
-
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {images.map(({ src, alt }, i) => (
             <div
