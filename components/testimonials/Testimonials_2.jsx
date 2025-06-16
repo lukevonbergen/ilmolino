@@ -1,25 +1,25 @@
 export default function TestimonialsIntermediate() {
   const testimonials = [
     {
-      name: "Ellie B.",
-      title: "Marketing Consultant",
-      quote: "The site launched in under 48 hours and my clients love it.",
+      name: "Ben Fish",
+      title: "Local Customer",
+      quote: "Lovely place, great coffee, and selection of pastries and sandwiches. Pleasant staff, easy vibe, nice space.",
       rating: 5,
-      avatar: "https://i.pravatar.cc/100?img=12",
+      avatar: "https://i.pravatar.cc/100?img=5",
     },
     {
-      name: "Jason K.",
-      title: "Gym Owner",
-      quote: "I was sceptical, but this outperformed my old WordPress site by far.",
+      name: "Rafal Skoczkowski",
+      title: "Regular Visitor",
+      quote: "Great food, incredibly friendly staff. Staff always willing to chat and serve with a smile.",
       rating: 5,
-      avatar: "https://i.pravatar.cc/100?img=17",
+      avatar: "https://i.pravatar.cc/100?img=26",
     },
     {
-      name: "Maria T.",
-      title: "Wedding Photographer",
-      quote: "Super fast turnaround and the design actually fits my brand.",
+      name: "Christina Hunt",
+      title: "Neighbourhood Customer",
+      quote: "Fresh food, especially the Portuguese natas tarts. Friendly and quick service.",
       rating: 4,
-      avatar: "https://i.pravatar.cc/100?img=32",
+      avatar: "https://i.pravatar.cc/100?img=47",
     },
   ];
 
@@ -27,10 +27,10 @@ export default function TestimonialsIntermediate() {
     <section className="bg-white py-24 px-6 md:px-12 border-t border-gray-100">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-          Our Clients Love the Results
+          What Our Customers Say
         </h2>
         <p className="text-lg md:text-xl text-gray-600 mb-12">
-          Straight from the people we’ve worked with.
+          A few kind words from our regulars.
         </p>
 
         <div className="grid md:grid-cols-3 gap-10 text-left">

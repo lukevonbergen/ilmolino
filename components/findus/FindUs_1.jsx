@@ -14,7 +14,7 @@ export default function HowToFindUs() {
           <p className="text-md text-gray-600">
             284 Battersea Park Road,< br />
             London SW11 3BT, United Kingdom
-            <br />
+            <br /><br />
             <strong>Opening Hours:</strong><br />
             Monday to Friday: 7:00 AM – 5:00 PM<br />
             Saturday: 7:30 AM – 5:00 PM<br />

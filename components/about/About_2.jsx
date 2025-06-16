@@ -22,7 +22,7 @@ export default function AboutUsIntermediate() {
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src="https://source.unsplash.com/featured/?cafe,coffee,italian"
+            src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=987&q=80"
             alt="Il Molino café interior"
             className="rounded-xl shadow-lg w-full h-auto object-cover"
           />
