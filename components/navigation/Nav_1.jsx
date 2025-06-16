@@ -20,7 +20,7 @@ export default function Navbar() {
           <a href="/contact" className="hover:text-black transition">Contact</a>
         </nav>
 
-        {/* CTA */}
+        {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
             href="/menu"
@@ -45,10 +45,16 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden mt-4 px-6 space-y-4 text-sm font-medium text-gray-700">
           <a href="/" onClick={() => setIsOpen(false)} className="block hover:text-black">Home</a>
-          <a href="#about" onClick={() => setIsOpen(false)} className="block hover:text-black">About</a>
-          <a href="#menu" onClick={() => setIsOpen(false)} className="block hover:text-black">Menu</a>
-          <a href="#gallery" onClick={() => setIsOpen(false)} className="block hover:text-black">Gallery</a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="block hover:text-black">Contact</a>
+          <a href="/gallery" onClick={() => setIsOpen(false)} className="block hover:text-black">Gallery</a>
+          <a href="/contact" onClick={() => setIsOpen(false)} className="block hover:text-black">Contact</a>
+
+          <a
+            href="/menu"
+            onClick={() => setIsOpen(false)}
+            className="block text-center bg-amber-600 text-white px-4 py-2 rounded-md font-semibold shadow hover:bg-amber-700 transition"
+          >
+            View Menu
+          </a>
         </div>
       )}
     </header>

@@ -9,7 +9,7 @@ export default function CallToAction() {
           Whether it’s a quick espresso or a relaxed brunch, Il Molino is ready to welcome you with warmth, flavour, and great coffee.
         </p>
         <a
-          href="#contact"
+          href="/contact"
           className="inline-block bg-white text-amber-800 px-6 py-3 rounded-lg font-semibold text-sm hover:bg-amber-100 transition"
         >
           Plan Your Visit
