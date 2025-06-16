@@ -15,7 +15,6 @@ export default function Navbar() {
             alt="Il Molino Logo"
             className="h-10 w-auto object-contain"
           />
-          <span className="text-xl font-bold tracking-tight text-gray-900 hidden sm:inline">Il Molino</span>
         </a>
 
         {/* Desktop Nav */}
