@@ -13,8 +13,8 @@ export default function HowToFindUs() {
           </p>
           <p className="text-md text-gray-600 mb-4">
             <strong>Address:</strong><br />
-            284 Battersea Park Road,<br />
-            London SW11 3BT, United Kingdom
+            155 Lavender Hill,<br />
+            London SW11 5QH
           </p>
           <p className="text-md text-gray-600 mb-4">
             <strong>Opening Hours:</strong><br />
@@ -31,7 +31,7 @@ export default function HowToFindUs() {
         <div className="md:w-1/2 w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-md">
           <iframe
             title="Our Location"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=284%20Battersea%20Park%20Road,%20%20London%20SW11%203BT,%20United%20Kingdom+(Il%20Molino)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed/v1/place?q=155+Lavender+Hill,+London+SW11+5QH&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             width="100%"
             height="100%"
             style={{ border: 0 }}
