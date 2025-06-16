@@ -2,24 +2,24 @@ import { Coffee, Croissant, Leaf } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-28 px-6 md:px-12 bg-white text-white">
-      {/* Background image layer */}
-      <div className="absolute inset-0 -z-20">
+    <section className="relative overflow-hidden py-28 px-6 md:px-12 text-white z-0">
+      {/* Background image */}
+      <div className="absolute inset-0 z-[-1]">
         <img
-          src="https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?auto=format&fit=crop&w=1600&q=80"
-          alt="Cafe background"
+          src="https://images.unsplash.com/photo-1442975631115-c4f7b05b8a2c?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Il Molino café background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" /> {/* dark overlay */}
+        <div className="absolute inset-0 bg-black/70" /> {/* dark overlay for contrast */}
       </div>
 
-      {/* Decorative blur circles (optional) */}
+      {/* Decorative blurred elements (optional) */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[600px] h-[600px] bg-yellow-100 rounded-full blur-3xl opacity-30 top-[-200px] left-[-200px]"></div>
-        <div className="absolute w-[400px] h-[400px] bg-amber-100 rounded-full blur-2xl opacity-30 bottom-[-100px] right-[-100px]"></div>
+        <div className="absolute w-[600px] h-[600px] bg-yellow-100 rounded-full blur-3xl opacity-20 top-[-200px] left-[-200px]"></div>
+        <div className="absolute w-[400px] h-[400px] bg-amber-100 rounded-full blur-2xl opacity-20 bottom-[-100px] right-[-100px]"></div>
       </div>
 
-      {/* Main Content */}
+      {/* Hero Content */}
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6">
           Welcome to <span className="text-amber-400">Il Molino</span>
