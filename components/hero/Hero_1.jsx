@@ -36,7 +36,7 @@ export default function HeroSection() {
             View Menu
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="text-amber-300 font-medium px-8 py-3 rounded-md border border-amber-300 bg-transparent hover:bg-amber-100/10 transition"
           >
             Visit Us
