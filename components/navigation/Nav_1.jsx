@@ -5,12 +5,17 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full py-6 px-6 md:px-12 border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+    <header className="w-full py-4 px-6 md:px-12 border-b border-gray-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
-        {/* Brand */}
-        <a href="/" className="text-xl font-bold tracking-tight text-gray-900">
-          Il Molino
+        {/* Brand Logo */}
+        <a href="/" className="flex items-center gap-3">
+          <img
+            src="/images/logo/main_logo.png"
+            alt="Il Molino Logo"
+            className="h-10 w-auto object-contain"
+          />
+          <span className="text-xl font-bold tracking-tight text-gray-900 hidden sm:inline">Il Molino</span>
         </a>
 
         {/* Desktop Nav */}
