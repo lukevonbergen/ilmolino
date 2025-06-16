@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Brand Logo */}
         <a href="/" className="flex items-center gap-3">
           <img
-            src="/images/logo/main_logo.png"
+            src="/images/logo/logo_ilmolino.png"
             alt="Il Molino Logo"
             className="h-10 w-auto object-contain"
           />
