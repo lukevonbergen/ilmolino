@@ -4,27 +4,27 @@ import { useState } from 'react';
 
 const images = [
   {
-    src: 'https://picsum.photos/seed/coffee1/800/600',
+    src: '/images/gallery/1.png',
     alt: 'Fresh coffee being served at Il Molino',
   },
   {
-    src: 'https://picsum.photos/seed/pastries2/800/600',
+    src: '/images/gallery/2.png',
     alt: 'Selection of handmade pastries at Il Molino',
   },
   {
-    src: 'https://picsum.photos/seed/brunch3/800/600',
+    src: '/images/gallery/3.png',
     alt: 'Brunch dish with focaccia and salad on a wooden table',
   },
   {
-    src: 'https://picsum.photos/seed/interior4/800/600',
+    src: '/images/gallery/4.png',
     alt: 'Warm and cozy café interior with wooden chairs and plants',
   },
   {
-    src: 'https://picsum.photos/seed/outdoor5/800/600',
+    src: '/images/gallery/5.png',
     alt: 'Outdoor seating area with coffee cups and croissants',
   },
   {
-    src: 'https://picsum.photos/seed/barista6/800/600',
+    src: '/images/gallery/6.png',
     alt: 'Barista preparing espresso behind the counter',
   },
 ];
