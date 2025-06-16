@@ -1,61 +1,62 @@
 'use client';
 
 const categoryIcons = {
-  Haircuts: '💇‍♂️', // 💇‍♂️
-  'Styling & Colour': '💇‍♀️', // 💇‍♀️
-  Nails: '💅', // 💅
+  Coffee: '☕',
+  'Pastries & Baked Goods': '🥐',
+  'Sandwiches & Light Bites': '🥪',
 };
 
-export default function ServicePriceListIntermediate() {
-  const services = [
+export default function MenuList() {
+  const menu = [
     {
-      category: 'Haircuts',
+      category: 'Coffee',
       items: [
-        { name: 'Men’s Cut', price: '£25', duration: '30 mins', desc: 'Tailored to your style and finished with product.' },
-        { name: 'Women’s Cut & Blow Dry', price: '£40', duration: '60 mins', desc: 'Full cut and style with blow-dry finish.' },
-        { name: 'Children (under 12)', price: '£15', duration: '20 mins', desc: 'Gentle, quick cuts for kids.' },
+        { name: 'Espresso', price: '£2.40', desc: 'Rich and bold single shot of Italian espresso.' },
+        { name: 'Cappuccino', price: '£2.90', desc: 'Creamy, frothy and full-bodied.' },
+        { name: 'Latte', price: '£3.10', desc: 'Smooth and velvety milk coffee.' },
+        { name: 'Iced Mocha', price: '£3.60', desc: 'A refreshing chocolate espresso blend over ice.' },
+        { name: 'Fresh Juices', price: '£3.50', desc: 'Seasonal blends, squeezed to order.' },
       ],
     },
     {
-      category: 'Styling & Colour',
+      category: 'Pastries & Baked Goods',
       items: [
-        { name: 'Full Colour', price: '£60', duration: '90 mins', desc: 'Professional full-head permanent colour.' },
-        { name: 'Highlights', price: '£75', duration: '2 hrs', desc: 'Subtle to bold — customised for your tone.' },
-        { name: 'Blow Dry', price: '£20', duration: '30 mins', desc: 'Volume and polish for any occasion.' },
+        { name: 'Pasteis de Nata', price: '£2.80', desc: 'Portuguese custard tarts with a caramelised top.' },
+        { name: 'Almond Croissant', price: '£3.10', desc: 'Buttery, flaky pastry with almond filling.' },
+        { name: 'Apricot Croissant', price: '£3.10', desc: 'Sweet and tangy fruit-filled croissant.' },
+        { name: 'Chocolate & Lemon Cannoli', price: '£2.90', desc: 'Crispy shells with rich, zesty fillings.' },
       ],
     },
     {
-      category: 'Nails',
+      category: 'Sandwiches & Light Bites',
       items: [
-        { name: 'Classic Manicure', price: '£25', duration: '30 mins', desc: 'Trim, file, buff and polish.' },
-        { name: 'Gel Polish', price: '£30', duration: '40 mins', desc: 'Long-lasting finish with colour of choice.' },
-        { name: 'Nail Art Add-on', price: 'from £5', duration: 'Varies', desc: 'Custom designs to elevate your look.' },
+        { name: 'Spinach & Cream Cheese Piadina', price: '£5.90', desc: 'Savory flatbread wrap with fresh greens.' },
+        { name: 'Aubergine & Mozzarella Focaccia', price: '£6.50', desc: 'Warm focaccia filled with Mediterranean flavour.' },
       ],
     },
   ];
 
   return (
-    <section className="bg-gray-50 py-24 px-6 md:px-12 border-t border-gray-100">
+    <section className="bg-white py-24 px-6 md:px-12 border-t border-gray-100">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Services & Pricing</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Il Molino Menu</h2>
 
         <div className="space-y-16">
-          {services.map(({ category, items }) => (
+          {menu.map(({ category, items }) => (
             <div key={category}>
               <div className="flex items-center gap-3 mb-6 border-b pb-2">
                 <span className="text-xl">{categoryIcons[category]}</span>
                 <h3 className="text-2xl font-semibold text-gray-800">{category}</h3>
               </div>
               <ul className="space-y-6">
-                {items.map(({ name, price, duration, desc }) => (
+                {items.map(({ name, price, desc }) => (
                   <li key={name} className="flex flex-col md:flex-row md:items-start md:justify-between">
                     <div className="md:w-2/3">
-                      <h4 className="font-medium text-gray-800">{name}</h4>
+                      <h4 className="font-medium text-gray-900">{name}</h4>
                       <p className="text-sm text-gray-600">{desc}</p>
                     </div>
                     <div className="text-right mt-2 md:mt-0 md:text-left">
                       <p className="text-gray-800 font-semibold">{price}</p>
-                      <p className="text-sm text-gray-500">{duration}</p>
                     </div>
                   </li>
                 ))}

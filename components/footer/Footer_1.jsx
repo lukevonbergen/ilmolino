@@ -7,8 +7,7 @@ export default function Footer() {
         </p>
         <nav className="flex space-x-6">
           <a href="/" className="hover:text-gray-900 transition">Home</a>
-          <a href="#about" className="hover:text-gray-900 transition">About</a>
-          <a href="#menu" className="hover:text-gray-900 transition">Menu</a>
+          <a href="/menu" className="hover:text-gray-900 transition">Menu</a>
           <a href="#gallery" className="hover:text-gray-900 transition">Gallery</a>
           <a href="#contact" className="hover:text-gray-900 transition">Contact</a>
         </nav>

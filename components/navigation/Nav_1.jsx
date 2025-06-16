@@ -16,8 +16,6 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
           <a href="/" className="hover:text-black transition">Home</a>
-          <a href="#about" className="hover:text-black transition">About</a>
-          <a href="#menu" className="hover:text-black transition">Menu</a>
           <a href="#gallery" className="hover:text-black transition">Gallery</a>
           <a href="#contact" className="hover:text-black transition">Contact</a>
         </nav>
@@ -25,7 +23,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="#menu"
+            href="/menu"
             className="bg-amber-600 text-white px-5 py-2 rounded-lg text-sm font-semibold shadow hover:bg-amber-700 transition"
           >
             View Menu
